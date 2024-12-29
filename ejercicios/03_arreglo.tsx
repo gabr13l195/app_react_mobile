@@ -7,7 +7,6 @@ import { Text, View, StyleSheet } from 'react-native';
 export const Arreglo3 = () => {
     const arreglo = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50];
 
-    // Funcion para dividir los valores por 5
     const dividirPorCinco = (arreglo: number[]): number[] => {
         return arreglo.map(numero => numero / 5);
     };

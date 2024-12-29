@@ -8,7 +8,6 @@ import { Text, View, StyleSheet } from 'react-native';
 export const ArregloPar4 = () => {
     const numeros = [1, 2, 3, 4];
 
-    // Función para identificar par o impar y generar un nuevo arreglo
     const identificarParImpar = (numeros: number[]): string[] => {
         return numeros.map(numero => (numero % 2 === 0 ? "par" : "impar"));
     };

@@ -9,14 +9,11 @@ import { Text, View, StyleSheet } from 'react-native';
 export const Arreglo5 = () => {
     const datos = [7, 5, "sistemas", "hola", "adios", 2];
 
-    // Separar datos numéricos y de texto
     const numeros = datos.filter(item => typeof item === 'number') as number[];
     const textos = datos.filter(item => typeof item === 'string') as string[];
 
-    // Encontrar el texto más largo
     const textoMayor = textos.reduce((a, b) => (a.length > b.length ? a : b), "");
 
-    // Calcular las operaciones matemáticas
     const suma = numeros.reduce((a, b) => a + b, 0);
     const resta = numeros.reduce((a, b) => a - b);
     const multiplicacion = numeros.reduce((a, b) => a * b, 1);
