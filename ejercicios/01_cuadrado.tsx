@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Text, View, StyleSheet, TextInput, Button, Alert } from 'react-native';
 
 export const Cuadrado = () => {
-    const [lado, setLado] = useState<number | null>(null); // Estado para guardar el valor ingresado
-    const [area, setArea] = useState<number | null>(null); // Estado para guardar el área calculada
+    const [lado, setLado] = useState<number | null>(null);
+    const [area, setArea] = useState<number | null>(null);
 
     const calcularArea = () => {
         if (lado && lado > 0) {
